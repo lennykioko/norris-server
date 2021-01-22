@@ -21,19 +21,25 @@ $ git clone https://github.com/lennykioko/norris-server.git
 $ cd into the created folder
 ```
 
-3. Install the dependencies
+2. Install the dependencies
 
 ```
 $ npm install
 ```
 
-6. Run the development server
+3. Run the build command
 
 ```
-$ npm run dev
+$ npm run build
 ```
 
-5. Navigate to [http://localhost:8000/graphql](http://localhost:8000/graphql)
+4. run the local server
+
+```
+$ npm start
+```
+
+5. Navigate to [http://localhost:5000/graphql](http://localhost:5000/graphql)
 
 At the /graphql endpoint you should see the interactive graphql playgound in your browser.
 
@@ -46,7 +52,7 @@ At the /graphql endpoint you should see the interactive graphql playgound in you
 
 ## Heroku
 
-https://book.herokuapp.com/graphql
+[https://norris-server.herokuapp.com/graphql](https://norris-server.herokuapp.com/graphql)
 
 ## Versioning
 
