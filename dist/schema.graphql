@@ -1,0 +1,14 @@
+type Query {
+  categories: [String!]!
+  randomJoke(category: String!): Joke!
+}
+
+type Joke {
+  id: ID!
+  value: String!
+  created_at: String
+  updated_at: String
+  url: String
+  icon_url: String
+  categories: [String]
+}
