@@ -38,6 +38,7 @@ const resolvers = {
 const server = new apollo_server_express_1.ApolloServer({
     typeDefs: fs_1.default.readFileSync(path_1.default.join(__dirname, 'schema.graphql'), 'utf8'),
     resolvers,
+    introspection: true,
 });
 server.applyMiddleware({ app, path: urlPath });
 app.listen(port, () => console.log(`Server running at http://localhost:${port}${urlPath}`));

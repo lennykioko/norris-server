@@ -19,6 +19,7 @@ const server = new ApolloServer({
   typeDefs: fs.readFileSync(
     path.join(__dirname, 'schema.graphql'), 'utf8'),
   resolvers,
+  introspection: true,
 });
 
 server.applyMiddleware({app, path: urlPath});
